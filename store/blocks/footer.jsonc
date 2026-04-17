@@ -18,7 +18,8 @@
   "flex-layout.row#footer-desktop": {
     "props": {
       "colSizing": "auto",
-      "horizontalAlign": "between"
+      "horizontalAlign": "between",
+      "blockClass": "footer-row"
     },
     "children": [
       "flex-layout.col#footer-left",
