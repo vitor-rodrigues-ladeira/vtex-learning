@@ -48,12 +48,14 @@
   },
   "rich-text#footer-left": {
     "props": {
-      "text": "**Formas de pagamento**"
+      "text": "**Formas de pagamento**",
+      "blockClass": "payment-methods-title"
     }
   },
   "rich-text#footer-right": {
     "props": {
-      "text": "**Selos de segurança**"
+      "text": "**Selos de segurança**",
+      "blockClass": "security-seals-title"
     }
   },
   "image#footer-payment-methods": {
