@@ -25,9 +25,19 @@
     ]
   },
   "flex-layout.col#footer-left": {
-    "children": []
+    "children": ["rich-text#footer-left"]
   },
   "flex-layout.col#footer-right": {
-    "children": []
+    "children": ["rich-text#footer-right"]
+  },
+  "rich-text#footer-left": {
+    "props": {
+      "text": "Formas de pagamento"
+    }
+  },
+  "rich-text#footer-right": {
+    "props": {
+      "text": "Selos de segurança"
+    }
   }
 }
