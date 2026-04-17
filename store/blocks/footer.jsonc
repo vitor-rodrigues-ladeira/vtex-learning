@@ -16,12 +16,19 @@
     ]
   },
   "flex-layout.row#footer-desktop": {
+    "props": {
+      "colSizing": "auto",
+      "horizontalAlign": "between"
+    },
     "children": [
       "flex-layout.col#footer-left",
       "flex-layout.col#footer-right"
     ]
   },
   "flex-layout.row#footer-mobile": {
+    "props": {
+      "colSizing": "auto"
+    },
     "children": [
       "flex-layout.col#footer-left",
       "flex-layout.col#footer-right"
@@ -36,29 +43,51 @@
   "flex-layout.col#footer-right": {
     "children": [
       "rich-text#footer-right",
-      "image#footer-security-seals"
+      "flex-layout.row#footer-security-seals"
     ]
   },
   "rich-text#footer-left": {
     "props": {
-      "text": " **Formas de pagamento**"
+      "text": "**Formas de pagamento**"
     }
   },
   "rich-text#footer-right": {
     "props": {
-      "text": " **Selos de segurança**"
-    }
-  },
-  "image#footer-security-seals": {
-    "props": {
-      "src": "https://kinsta.com/wp-content/uploads/2021/10/Untitled-3.png",
-      "alt": "Selos de segurança"
+      "text": "**Selos de segurança**"
     }
   },
   "image#footer-payment-methods": {
     "props": {
       "src": "https://ladeira.vtexassets.com/assets/vtex.file-manager-graphql/images/82576549-f938-43d5-a8cc-f73619c05d12___40c9c6f13fc1eb2ea5e558d35835fd63.svg",
       "alt": "Formas de pagamento"
+    }
+  },
+  "flex-layout.row#footer-security-seals": {
+    "props": {
+      "horizontalAlign": "left"
+    },
+    "children": [
+      "image#footer-security-seal-1",
+      "image#footer-security-seal-2",
+      "image#footer-security-seal-3"
+    ]
+  },
+  "image#footer-security-seal-1": {
+    "props": {
+      "src": "https://ladeira.vtexassets.com/arquivos/Group 961.png",
+      "alt": "Selos de segurança"
+    }
+  },
+  "image#footer-security-seal-2": {
+    "props": {
+      "src": "https://ladeira.vtexassets.com/arquivos/obit-logo.png",
+      "alt": "Selos de segurança"
+    }
+  },
+  "image#footer-security-seal-3": {
+    "props": {
+      "src": "https://ladeira.vtexassets.com/arquivos/lets-encrypt.png",
+      "alt": "Selos de segurança"
     }
   }
 }
