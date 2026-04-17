@@ -49,13 +49,15 @@
   "rich-text#footer-left": {
     "props": {
       "text": "**Formas de pagamento**",
-      "blockClass": "payment-methods-title"
+      "blockClass": "column-title",
+      "textColor": "#861C0E"
     }
   },
   "rich-text#footer-right": {
     "props": {
       "text": "**Selos de segurança**",
-      "blockClass": "security-seals-title"
+      "blockClass": "column-title",
+      "textColor": "#861C0E"
     }
   },
   "image#footer-payment-methods": {
