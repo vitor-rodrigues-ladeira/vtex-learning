@@ -1,6 +1,9 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
   },
   "footer-layout.desktop": {
     "children": [
@@ -25,10 +28,14 @@
     ]
   },
   "flex-layout.col#footer-left": {
-    "children": ["rich-text#footer-left"]
+    "children": [
+      "rich-text#footer-left"
+    ]
   },
   "flex-layout.col#footer-right": {
-    "children": ["rich-text#footer-right"]
+    "children": [
+      "rich-text#footer-right"
+    ]
   },
   "rich-text#footer-left": {
     "props": {
