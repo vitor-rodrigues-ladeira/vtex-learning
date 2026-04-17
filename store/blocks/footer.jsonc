@@ -17,19 +17,32 @@
   },
   "flex-layout.row#footer-desktop": {
     "props": {
-      "colSizing": "auto",
       "horizontalAlign": "between",
       "blockClass": "footer-row"
     },
     "children": [
-      "flex-layout.col#footer-left",
-      "flex-layout.col#footer-right",
-      "rich-text#description"
+      "flex-layout.col#footer-right-wrapper"
     ]
   },
   "flex-layout.row#footer-mobile": {
     "props": {
       "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#footer-left",
+      "flex-layout.col#footer-right"
+    ]
+  },
+  "flex-layout.col#footer-right-wrapper": {
+    "children": [
+      "flex-layout.row#footer-columns",
+      "rich-text#description"
+    ]
+  },
+  "flex-layout.row#footer-columns": {
+    "props": {
+      "colSizing": "auto",
+      "horizontalAlign": "between"
     },
     "children": [
       "flex-layout.col#footer-left",
@@ -51,15 +64,13 @@
   "rich-text#footer-left": {
     "props": {
       "text": "**Formas de pagamento**",
-      "blockClass": "column-title",
-      "textColor": "#861C0E"
+      "blockClass": "column-title"
     }
   },
   "rich-text#footer-right": {
     "props": {
       "text": "**Selos de segurança**",
-      "blockClass": "column-title",
-      "textColor": "#861C0E"
+      "blockClass": "column-title"
     }
   },
   "image#footer-payment-methods": {
@@ -99,7 +110,8 @@
   "rich-text#description": {
     "props": {
       "text": "Ladeira Comércio de Bijuterias LTDA. | CNPJ: 35.652.033/0005-24| EST THEREZA THOMAZELLA, 432 - \n GALPAO3 PAVLH A - Extrema - MG | 2022 - Todos Os Direitos Reservados .",
-      "textColor": "#861C0E"
+      "textAlignment": "CENTER",
+      "blockClass": "footer-description"
     }
   }
 }
