@@ -23,7 +23,8 @@
     },
     "children": [
       "flex-layout.col#footer-left",
-      "flex-layout.col#footer-right"
+      "flex-layout.col#footer-right",
+      "rich-text#description"
     ]
   },
   "flex-layout.row#footer-mobile": {
@@ -93,6 +94,12 @@
     "props": {
       "src": "https://ladeira.vtexassets.com/arquivos/lets-encrypt.png",
       "alt": "Selos de segurança"
+    }
+  },
+  "rich-text#description": {
+    "props": {
+      "text": "Ladeira Comércio de Bijuterias LTDA. | CNPJ: 35.652.033/0005-24| EST THEREZA THOMAZELLA, 432 - \n GALPAO3 PAVLH A - Extrema - MG | 2022 - Todos Os Direitos Reservados .",
+      "textColor": "#861C0E"
     }
   }
 }
