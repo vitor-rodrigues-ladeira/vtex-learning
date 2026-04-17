@@ -29,12 +29,14 @@
   },
   "flex-layout.col#footer-left": {
     "children": [
-      "rich-text#footer-left"
+      "rich-text#footer-left",
+      "image#footer-payment-methods"
     ]
   },
   "flex-layout.col#footer-right": {
     "children": [
-      "rich-text#footer-right"
+      "rich-text#footer-right",
+      "image#footer-security-seals"
     ]
   },
   "rich-text#footer-left": {
@@ -45,6 +47,18 @@
   "rich-text#footer-right": {
     "props": {
       "text": "Selos de segurança"
+    }
+  },
+  "image#footer-security-seals": {
+    "props": {
+      "src": "https://kinsta.com/wp-content/uploads/2021/10/Untitled-3.png",
+      "alt": "Selos de segurança"
+    }
+  },
+  "image#footer-payment-methods": {
+    "props": {
+      "src": "https://ladeira.vtexassets.com/assets/vtex.file-manager-graphql/images/82576549-f938-43d5-a8cc-f73619c05d12___40c9c6f13fc1eb2ea5e558d35835fd63.svg",
+      "alt": "Formas de pagamento"
     }
   }
 }
