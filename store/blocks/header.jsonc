@@ -1,79 +1,55 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "props": {
+      "blockClass": "header"
+    },
+    "blocks": [
+      "header-layout.desktop#custom"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
-  },
-  "header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
+    "props": {
+      "blockClass": "header"
+    },
+    "blocks": [
+      "header-layout.desktop#custom"
     ]
   },
-  "sticky-layout#desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
-    "children": ["flex-layout.row#desktop"]
+  "header-layout.desktop#custom": {
+    "children": [
+      "flex-layout.row#header"
+    ]
   },
-  "flex-layout.row#desktop": {
+  "flex-layout.row#header": {
     "props": {
+      "blockClass": "header-container",
       "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
+      "flex-layout.row#header-content"
     ]
   },
-  "flex-layout.col#spacer": {
+  "flex-layout.row#header-content": {
     "props": {
-      "width": "grow"
-    }
-  },
-  "flex-layout.col#logo-desktop": {
-    "props": {
-      "verticalAlign": "middle"
+      "blockClass": "header-content",
+      "horizontalAlign": "center",
+      "width": "15%"
     },
-    "children": ["logo"]
-  },
-  "logo": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
-    }
-  },
-  "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
-  },
-  "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
-  },
-  "flex-layout.row#mobile": {
     "children": [
-      "drawer",
-      "logo",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
-    ],
-    "props": {
-      "blockClass": "main-header-mobile",
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true,
-      "fullWidth": true
-    }
+      "logo#logo"
+    ]
   },
-  "drawer": {
-    "children": []
+  "logo#logo": {
+    "props": {
+      "url": "https://ladeira.vtexassets.com/assets/vtex.file-manager-graphql/images/83ad6a4c-3df4-45b1-880f-30787a40f575___8d13b3257482c871cf9722d6c405e055.png",
+      "href": "https://www.ladeiraarmarinhos.com.br/",
+      "color": "#e77715",
+      "blockClass": "logo",
+      "width": 132,
+      "height": 50,
+      "mobileWidth": 90,
+      "mobileHeight": 32
+    }
   }
 }

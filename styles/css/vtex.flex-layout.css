@@ -5,3 +5,7 @@
   max-width: 1000px;
   width: 100%;
 }
+
+.flexRowContent--header-container{
+    background-color: #6f170c;
+}
