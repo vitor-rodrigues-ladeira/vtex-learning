@@ -5,7 +5,8 @@
 
 .wrapper--footer-description {
   max-width: 800px;
-  margin: 0 auto;    
+  margin: 0 auto;
+  padding-top: 16px;    
   font-size: 12px;
   color: #8c8c8c;
 }
